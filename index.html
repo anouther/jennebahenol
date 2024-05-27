@@ -1,0 +1,113 @@
+<html>
+  <title>i love you</title>
+<meta charset='UTF-8' />
+<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5'
+  name='viewport' />
+<meta content='IE=edge' http-equiv='X-UA-Compatible' />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js">
+</script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script src="script.js"></script>
+
+<body>
+  <style>
+    body {
+      background-image: url("bg.jpg");
+      font-family: 'Balsamiq Sans';
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  </style>
+
+  <div id="konten">
+
+    <input class='chatMenu hidden' id='offchatMenu' type='checkbox' />
+    <div class="bodyblur"></div>
+    <div class='chatBox'>
+      <div id='data' class='chatContent'>
+        <div class='chatText'>
+          <span id='text1'>happy mensive Princess. thank you for making me feel worthy to be loved.</span>
+          <span id='text2'>selama hubungan kita ini banyak banget yang kita lewati kan, mulai dari kita berantem, perdebatan kecil, dan kadang kita sama sama egois</span>
+          <span id='text3'>tapi aku mau bilang makasih ke kamu, makasih udah mau bertahan sama cowo keras kepala ini</span>
+          <span id='text4'>aku sadar ngadepin sikapku kadang ga mudah, tapi percaya ga aku kagum karna kamu lebih milih bertahan daripada pergi.</span>
+          <span id='text5'>maaf juga kalo aku suka pundungan, cemburuan, aku kaya gitu karna terlalu sayang sama adek smoll ini, tapi maaf kalo menurut kamu aku berlebihan.</span>
+          <span id='text6'>maaf ya kalo aku suka bikin kamu khawatir semisal aku gaa on karna kesibukan rl</span>
+          <span id='text7'>kamu ga boleh mikir kalo aku ada deket sama orang lain dibelakang kamu, karna hal itu ga akan pernah aku lakuin.</span>
+          <span id='text8'>terlintas dipikiranku juga ga, karna jujur bisa dapetin adek smoll secantik kamu aja aku udah bersyukur masa mau disakitin</span>
+          <span id="text10">aku emang bukan cowo yang sempurna tapi aku bakal berusaha ngerubah diri demi kamu </span>
+          <span id="text11">Jadi tolong sama aku terus ya? you know my heart, I said </span>
+          <span id="text12">I love you ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ</span>
+          <span id="text13">I love you in every universe</span>
+          <span id="text14">You'll always be the first</span>
+          <span id="text15">I love you, you're my only one</span>
+          <span id="text16">I love you (I do)ㅤ ㅤ ㅤ </span>
+          <span id="text17">Love you still, I always will</span>
+          <span id="text18">I want you to know how I feel ㅤ </span>
+          <span id="text19">And all the promises that I'll fulfill </span>
+          <span id="text20">My only one</span>
+          <span id='text9'>My only lovе, tap love<label class="lovein" onclick="selesai();">&#9829;</label></span>
+        </div>
+      </div>
+    </div>
+
+    <div id="foto">
+      <div class="image">
+        <img id="photo" src="download.gif" width="200px" height="200px" />
+      </div>
+      <span id="textlv"></span>
+    </div>
+    <div id="contTom"><a class='button whatsapp' onClick='bukaWa();'><i class='icon whatsapp'></i>Kirim</a></div>
+  </div>
+
+  <script type="text/javascript">
+    //Ucapan Terakhir
+    var a = 0, finish; finish = "thank you for everything you gave me, you gave your love to me, you brought the brightest star to my life somehow my life is like the night sky this without you. kamu itu kayak bintang sirius yang paling terang di alam semesta dan paling terang di hidupku. inget ucapan aku ini, kamu gaperlu rubah diri kamu untuk terlihat sempurna di mata aku karna kamu udah sempurna untuk aku, kamu cantik, lucu, perhatian siapa coba yang ga akan naksir? malah aku yang takut, takut kamu memilih pergi.Sayang serumit apapun masalah kita. Sebanyak apapun rintangannya. Sebosan apapun kita nantinya. Jangan pernah akhirin hubungannya yaa. Karna aku aku mau ngelakuin banyak hal sama kamu.  let's try to be better for each other and for us.";
+
+    function bukaWa() {window.location = "https://t.me/cUdut"}
+
+    function play() {
+      //Link Audio Bisa Diganti
+      var audio = new Audio('P.S. I LOVE YOU - Paul Partohap (1).mp3');
+      audio.play();
+    }
+    const swals = Swal.mixin({
+      allowOutsideClick: false,
+    });
+    async function mulai() {
+      await swals.fire('Hi, the most beautiful person I have ever seen.');
+      await swals.fire('I want to tell you something');
+      setTimeout(check, 1000); setTimeout(teks1, 1000); play();
+    }
+
+    //Mulai
+    mulai()
+  </script>
+  <script>
+    function teks1() {document.getElementById('text1').style.display = "inline-block"; document.getElementById('text1').style.opacity = "1"; setTimeout(teks2, 4000);}
+
+    function teks2() {document.getElementById('text2').style.display = "inline-block"; document.getElementById('text2').style.opacity = "1"; setTimeout(teks3, 5000); scroll()}
+    function teks3() {document.getElementById('text3').style.display = "inline-block"; document.getElementById('text3').style.opacity = "1"; setTimeout(teks4, 5000); scroll()}
+    function teks4() {document.getElementById('text4').style.display = "inline-block"; document.getElementById('text4').style.opacity = "1"; setTimeout(teks5, 5000); scroll()}
+    function teks5() {document.getElementById('text5').style.display = "inline-block"; document.getElementById('text5').style.opacity = "1"; setTimeout(teks6, 5500); scroll()}
+    function teks6() {document.getElementById('text6').style.display = "inline-block"; document.getElementById('text6').style.opacity = "1"; setTimeout(teks7, 4500); scroll()}
+    function teks7() {document.getElementById('text7').style.display = "inline-block"; document.getElementById('text7').style.opacity = "1"; setTimeout(teks8, 6000); scroll()}
+    function teks8() {document.getElementById('text8').style.display = "inline-block"; document.getElementById('text8').style.opacity = "1"; setTimeout(teks10, 6500); scroll()}
+    function teks10() {document.getElementById('text10').style.display = "inline-block"; document.getElementById('text10').style.opacity = "1"; setTimeout(teks11, 4000); scroll()}
+    function teks11() {document.getElementById('text11').style.display = "inline-block"; document.getElementById('text11').style.opacity = "1"; setTimeout(teks12, 3700); scroll()}
+    function teks12() {document.getElementById('text12').style.display = "inline-block"; document.getElementById('text12').style.opacity = "1"; setTimeout(teks13, 3200); scroll()}
+    function teks13() {document.getElementById('text13').style.display = "inline-block"; document.getElementById('text13').style.opacity = "1"; setTimeout(teks14, 5500); scroll()}
+    function teks14() {document.getElementById('text14').style.display = "inline-block"; document.getElementById('text14').style.opacity = "1"; setTimeout(teks15, 6500); scroll()}
+    function teks15() {document.getElementById('text15').style.display = "inline-block"; document.getElementById('text15').style.opacity = "1"; setTimeout(teks16, 5500); scroll()}
+    function teks16() {document.getElementById('text16').style.display = "inline-block"; document.getElementById('text16').style.opacity = "1"; setTimeout(teks17, 6000); scroll()}
+    function teks17() {document.getElementById('text17').style.display = "inline-block"; document.getElementById('text17').style.opacity = "1"; setTimeout(teks18, 5000); scroll()}
+    function teks18() {document.getElementById('text18').style.display = "inline-block"; document.getElementById('text18').style.opacity = "1"; setTimeout(teks19, 5000); scroll()}
+      function teks19() {document.getElementById('text19').style.display = "inline-block"; document.getElementById('text19').style.opacity = "1"; setTimeout(teks20, 6200); scroll()}
+    function teks20() {document.getElementById('text20').style.display = "inline-block"; document.getElementById('text20').style.opacity = "1"; setTimeout(teks9, 4000); scroll()}
+    function teks9() {document.getElementById('text9').style.display = "inline-block"; document.getElementById('text9').style.opacity = "1"; scroll()}
+  </script>
+</body>
+
+</html>
